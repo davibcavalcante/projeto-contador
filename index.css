@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(-50deg, rgb(0, 0, 0), rgb(255, 0, 0));
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+header {
+    color: white;
+    font: italic lighter 1.7em Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+    text-align: center;
+    text-shadow: 1px 1px 3px black;
+    padding-top: 20px;
+}
+
+section {
+    background-color: white;
+    width: 50vw;
+    min-width: 330px;
+    max-width: 600px;
+    padding: 10px 0px 0px 10px;
+    border: 2px solid red;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.507);
+    margin: auto;
+    margin-top: 20px;
+}
+
+section > p {
+    color: rgb(255, 0, 128);
+    font: italic bolder 1.2em Arial, Helvetica, sans-serif;
+}
+
+section > input {
+    font-size: 1.2em;
+    font-weight: bolder;
+    padding-left: 5px;
+    width: 70px;
+    height: 50px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(255, 0, 128);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.493);
+}
+
+section > button {
+    width: 70px;
+    border: 1px solid rgb(255, 0, 128);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.493);
+    padding: 10px;
+    margin-bottom: 20px;
+    font-variant: small-caps;
+}
+
+section > button:hover {
+    background-color: rgba(240, 128, 128, 0.514);
+    cursor: pointer;
+}
+
+section > .saida {
+    color: rgb(255, 0, 128);
+    font: italic bolder 1.5em Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+    padding: 0px 5px 10px 5px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 5px;
+}
+
+footer > p > a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer > p > a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
