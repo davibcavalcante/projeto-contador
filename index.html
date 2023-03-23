@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="imagens/logoicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/index.css">
     <title>Contador</title>
 </head>
 <body>
     <header>
-        <h1>Contador Automático</h1>
+        <a href="contador-manual.html">Contador Manual</a>
     </header>
+    <div>
+        <h1>Contador Automático</h1>
+    </div>
     <section class="entrada">
         <p>Início:</p>
         <input type="number" name="num" id="num-inicio">
@@ -18,15 +22,16 @@
         <input type="number" name="num" id="num-final">
         <p>Pulo:</p>
         <input type="number" name="num" id="num-pulo"> <br>
-        <button onclick="pegaDados()">Contar</button>
+        <button onclick="pegaDados()">Contar</button> <br>
         <div class="saida">
             
         </div>
     </section>
     <footer>
-        <p>&copy Contador desenvolvido por <a href="#">Davi Cavalcante</a></p>
+        <p>&copy; Contador desenvolvido por <a href="#">Davi Cavalcante</a></p>
     </footer>
 
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/contador-manual.js"></script>
 </body>
 </html>

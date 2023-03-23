@@ -13,8 +13,32 @@ body {
 }
 
 header {
+    text-align: center;
+    background-color: white;
+    padding: 10px 0px;
+    width: 500px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493);
+    margin: auto;
+}
+
+header > a {
+    color: rgb(255, 0, 128);
+    font-size: 1.5em;
+    font-style: italic;
+    font-variant: small-caps;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header > a:hover {
+    font-weight: lighter;
+}
+
+div > h1 {
     color: white;
-    font: italic lighter 1.7em Arial, Helvetica, sans-serif;
+    font: italic lighter 3.5em Arial, Helvetica, sans-serif;
     font-variant: small-caps;
     text-align: center;
     text-shadow: 1px 1px 3px black;
@@ -51,10 +75,10 @@ section > input {
 }
 
 section > button {
-    width: 70px;
+    width: 78px;
     border: 1px solid rgb(255, 0, 128);
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.493);
-    padding: 10px;
+    padding: 7px;
     margin-bottom: 20px;
     font-variant: small-caps;
 }
