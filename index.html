@@ -16,20 +16,23 @@
         <h1>Contador Automático</h1>
     </div>
     <section class="entrada">
-        <p>Início:</p>
-        <input type="number" name="num" id="num-inicio">
-        <p>Final:</p>
-        <input type="number" name="num" id="num-final">
-        <p>Pulo:</p>
-        <input type="number" name="num" id="num-pulo"> <br>
-        
-        <button onclick="pegaDados()">Contar</button> <br>
+        <div class="input-group">
+            <label for="num-inicio">Início:</label>
+            <label for="num-final">Final:</label>
+            <label for="num-pulo">Pulo:</label>
+        </div>
+        <div class="input-group">
+            <input type="number" name="num" id="num-inicio">
+            <input type="number" name="num" id="num-final">
+            <input type="number" name="num" id="num-pulo">
+        </div>
+        <button onclick="pegaDados()">Contar</button>
         <div class="saida">
             
         </div>
     </section>
     <footer>
-        <p>&copy; Contador desenvolvido por <a href="https://github.com/davibcavalcante">Davi Cavalcante</a></p>
+        <p>&copy; Contador desenvolvido por <a href="https://github.com/davibcavalcante" target="_blank" rel="external">Davi Cavalcante</a></p>
     </footer>
 
     <script src="js/index.js"></script>

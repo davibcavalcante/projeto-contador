@@ -3,116 +3,118 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(-50deg, rgb(0, 0, 0), rgb(255, 0, 0));
-    background-attachment: fixed;
     height: 100vh;
-    width: 100vw;
-}
-
-header {
-    text-align: center;
-    background-color: white;
-    padding: 10px 0px;
-    width: 100vw;
-    max-width: 500px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493);
-    margin: auto;
+    background: white linear-gradient(to top, rgb(65, 46, 11), orange) no-repeat fixed;
+    position: relative;
 }
 
 header > a {
-    color: rgb(255, 0, 128);
-    font-size: 1.5em;
-    font-style: italic;
+    display: block;
+    color: black;
+    background-color: white;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
     font-variant: small-caps;
+    font-style: italic;
     text-decoration: none;
-    font-weight: bolder;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 200px;
+    margin: auto;
 }
 
 header > a:hover {
-    font-weight: lighter;
+    color: white;
+    background-color: rgba(255, 136, 0, 0.493);
 }
 
 div > h1 {
     color: white;
-    font: italic lighter 3.5em Arial, Helvetica, sans-serif;
+    font: normal lighter 1.5em Arial, Helvetica, sans-serif;
     font-variant: small-caps;
     text-align: center;
-    text-shadow: 1px 1px 3px black;
-    padding-top: 20px;
+    padding: 10px 0;
 }
 
 section {
     background-color: white;
-    width: 50vw;
-    min-width: 330px;
-    max-width: 600px;
-    padding: 10px 0px 0px 10px;
-    border: 2px solid red;
-    border-radius: 15px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.507);
-    margin: auto;
-    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
 }
 
-section > p {
-    color: rgb(255, 0, 128);
-    font: italic bolder 1.2em Arial, Helvetica, sans-serif;
-}
-
-section > input {
+.input-group {
     display: flex;
-    justify-content: space-between;
-    font-size: 1.2em;
-    font-weight: bolder;
-    padding-left: 5px;
+}
+
+label {
+    font: italic bold 1em Arial, Helvetica, sans-serif;
+    display: inline-block;
+    margin: auto;
+}
+
+input {
+    font-size: 1em;
+    display: inline-block;
     width: 70px;
-    height: 50px;
-    margin-bottom: 15px;
-    border: 1px solid rgb(255, 0, 128);
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.493);
+    height: 20px;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 3px;
 }
 
-section > button {
-    width: 78px;
-    border: 1px solid rgb(255, 0, 128);
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.493);
-    padding: 7px;
-    margin-bottom: 20px;
+button {
+    color: white;
+    background-color: rgb(202, 143, 33);
     font-variant: small-caps;
-}
-
-section > button:hover {
-    background-color: rgba(240, 128, 128, 0.514);
+    font-size: 1.1em;
+    border: none;
+    padding: 5px;
+    display: block;
+    margin: auto;
+    width: 94%;
     cursor: pointer;
+    transition: .5s;
 }
 
-section > .saida {
-    color: rgb(255, 0, 128);
-    font: italic bolder 1.5em Arial, Helvetica, sans-serif;
+button:hover {
+    background-color: rgb(216, 95, 15);
+}
+
+.saida {
+    font: normal bold 1.3em Arial, Helvetica, sans-serif;
     font-variant: small-caps;
-    padding: 0px 5px 10px 5px;
+    text-align: justify;
+    padding: 10px;
 }
 
 footer {
-    color: white;
+    background-color: white;
+    width: 99.4%;
+    padding: 5px;
     text-align: center;
-    font-weight: bolder;
-    padding-top: 5px;
+    font: normal bold 1em Arial, Helvetica, sans-serif;
+
+
+    position: absolute;
+    bottom: 0;
 }
 
 footer > p > a {
-    color: white;
-    font-weight: bolder;
+    color: black;
     text-decoration: none;
 }
 
 footer > p > a:hover {
-    cursor: pointer;
     text-decoration: underline;
 }

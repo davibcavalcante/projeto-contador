@@ -32,13 +32,23 @@ function contar() {
     saida.innerHTML = null
     if (nInicio < nFinal) {
         while (nInicio <= nFinal) {
-            saida.innerHTML += `${nInicio}  `
-            nInicio += nPulo
+            if (nInicio < 10) {
+                saida.innerHTML += `0${nInicio}  `
+                nInicio += nPulo
+            } else {
+                saida.innerHTML += `${nInicio}  `
+                nInicio += nPulo
+            }
         }
     } else {
         while (nInicio >= nFinal) {
-            saida.innerHTML += `${nInicio}  `
-            nInicio -= nPulo
+            if (nInicio < 10) {
+                saida.innerHTML += `0${nInicio}  `
+                nInicio -= nPulo
+            } else {
+                saida.innerHTML += `${nInicio}  `
+                nInicio -= nPulo
+            }
         }
     }
 }
