@@ -8,7 +8,8 @@
 
 body {
     height: 100vh;
-    background: white linear-gradient(to top, rgb(65, 46, 11), orange) no-repeat fixed;
+    background: white linear-gradient(to top, rgb(65, 46, 11), orange) no-repeat;
+    background-size: contain;
     position: relative;
 }
 

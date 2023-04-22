@@ -13,6 +13,7 @@
 
 body {
     background-image: linear-gradient(130deg, orangered, lightcoral);
+    background-size: contain;
     height: 100vh;
     width: 100vw;
 }
